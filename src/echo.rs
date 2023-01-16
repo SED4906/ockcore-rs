@@ -1,6 +1,6 @@
 use std::env;
 
-fn main() -> Result<(),std::io::Error> {
+fn main(){
     let args: Vec<String> = env::args().collect();
     let args = args.split_at(1).1;
     let mut first = true;
@@ -16,5 +16,4 @@ fn main() -> Result<(),std::io::Error> {
             }
         }
     }
-    Ok(())
 }
